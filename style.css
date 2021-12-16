@@ -20,10 +20,11 @@ header .navigation{
     visibility: hidden;
     height: 100%;
     top: 0;
-    background: url(assets/background.jpg);
+    background: url(assets/background.jpg) no-repeat;
+    background-size: cover;
     opacity: 0;
     flex-direction: column;
-    padding: 60px 30px 0 20px;
+    padding: 100px 30px 0 20px;
     -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -51,24 +52,40 @@ header .navigation li a:hover{
 }
 
 .menuToggle{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: url(assets/menu.png);
-    background-size: 30px;
-    margin-left: 20px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: url(assets/warrior-icon.png);
+    background-size: 70px;
+    margin-left: 30px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     z-index: 100;
     transition: 0.5s;
+    /* animation: filterGlow 2s cubic-bezier(0.85, 0, 0.15, 1) forwards; */
 }
 
+@keyframes filterGlow {
+
+    from {
+        background-size: 70px;
+    }
+
+    to {
+        background-size: 75px;
+    }
+
+  }
+
 .menuToggle.active{
-    background: url(assets/close.png);
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(assets/warrior-icon.jpg);
+    filter: drop-shadow(0 0 10px #fff);
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-size: 70px;
+    margin-left: 30px;
 }
 
 section, footer{
@@ -91,4 +108,35 @@ footer{
 
 .main{
     background-color: #264653;
+}
+
+@media (max-width: 991px){
+
+    header .navigation{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    header .navigation.active{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header .navigation li{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    header .navigation li a{
+        font-size: 2em;
+
+    }
 }
