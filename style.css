@@ -1,6 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    padding: 10px 0;
+    height: 100vh;
+}
+
+header .navigation{
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    height: 100%;
+    top: 0;
+    background: url(assets/background.jpg);
+    opacity: 0;
+    flex-direction: column;
+    padding: 60px 30px 0 20px;
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+header .navigation.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-top: 5px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.0em;
+}
+
+header .navigation li a:hover{
+    color: #fcbf49;
+}
+
+.menuToggle{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(assets/menu.png);
+    background-size: 30px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.menuToggle.active{
+    background: url(assets/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 section, footer{
@@ -13,4 +81,14 @@ section, footer{
 
 footer{
     height: auto;
+}
+
+ header.sticky{
+     background: #fff;
+     padding: 10px 100px;
+     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+ }
+
+.main{
+    background-color: #264653;
 }
