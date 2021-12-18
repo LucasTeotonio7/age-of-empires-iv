@@ -24,6 +24,7 @@ header{
     position: fixed;
     padding: 10px 0;
     height: 100vh;
+    z-index: 1000;
 }
 
 header .navigation{
@@ -94,15 +95,6 @@ header .navigation li a:hover{
  }
 
 @media (max-width: 991px){
-    /* header{
-        width: 100%;
-        height: auto;
-        position: fixed;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
 
     header .navigation{
         width: 100%;
@@ -145,5 +137,76 @@ header .navigation li a:hover{
 @media (max-width: 991px){
     .main .logo{
         width: 60vw;
+    }
+}
+
+.civilizations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #001219;
+    min-height: 100vh;
+}
+
+.civilizations .title{
+    color: #fff;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.civilizations .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.civilizations .content .box{
+    width: 250px;
+    margin: 20px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+    cursor: pointer;
+
+}
+
+.civilizations .content .box:hover{
+    box-shadow: 0 0 5px #fff;
+    transition: 0.5s;
+}
+
+.civilizations .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.civilizations .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.civilizations .content .box .imgText h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #e9c46a;
+}
+
+@media (max-width: 600px){
+    .civilizations .content .box {
+        width: 90%;
+        margin: 15px;
     }
 }
