@@ -193,11 +193,14 @@ header .navigation li a:hover{
     margin: 20px;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
     cursor: pointer;
-
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #fff,#ffffff20, #ffffff00 100%) 1;
+    border-bottom-color: none;
 }
 
 .civilizations .content .box:hover{
     box-shadow: 0 0 5px #fff;
+    border: 1px solid #fff;
     transition: 0.5s;
 }
 
