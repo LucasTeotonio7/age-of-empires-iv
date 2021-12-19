@@ -63,7 +63,7 @@ header .navigation{
     visibility: hidden;
     height: 100%;
     top: 0;
-    background: url(assets/background.jpg) no-repeat;
+    background: url(assets/images/backgrounds/background1.jpg) no-repeat;
     background-size: cover;
     opacity: 0;
     flex-direction: column;
@@ -98,7 +98,7 @@ header .navigation li a:hover{
     position: relative;
     width: 70px;
     height: 70px;
-    background: url(assets/warrior-icon.png);
+    background: url(assets/images/icons/warrior-icon.png);
     background-size: 70px;
     margin-left: 30px;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ header .navigation li a:hover{
 }
 
 .menuToggle.active{
-    background: url(assets/warrior-icon.jpg);
+    background: url(assets/images/icons/warrior-icon.jpg);
     filter: drop-shadow(0 0 10px #fff);
     position: relative;
     width: 70px;
@@ -156,7 +156,7 @@ header .navigation li a:hover{
 }
 
 .main{
-    background: url('assets/background2.jpg') no-repeat;
+    background: url('assets/images/backgrounds/background2.jpg') no-repeat;
     background-size: cover;
 }
 
