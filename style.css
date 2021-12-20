@@ -273,3 +273,110 @@ header .navigation li a:hover{
         font-size: 1.0em;
     }
 }
+
+/* campaigns style */
+
+.campaigns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #001219;
+    /* background-image: url('assets/images/backgrounds/swoosh.png'); */
+    background-repeat: no-repeat;
+}
+
+.campaigns .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.campaigns .content .box{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.campaigns .content .box .tumbnail{
+    position: relative;
+    width: 45%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.campaigns .content .box .desc{
+    position: relative;
+    width: 45%;
+    height: 60vh;
+    margin: 2%;
+    color: rgb(202, 194, 194);
+    font-family: maiola;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campaigns .content .box:nth-of-type(even) .desc{
+    order: 0;
+}
+
+.campaigns .content .box:nth-of-type(even) .tumbnail{
+    order: 1;
+}
+
+.campaigns .content .box .desc h3{
+    margin-bottom: 20px;
+}
+
+.campaigns .content .box .desc p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.campaigns .content .box .tumbnail img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: 0.5s;
+}
+
+@media (max-width: 991px){
+
+    .campaigns .content .box .tumbnail{
+        width: 100%;
+        margin: 0%;
+        height: 40vh;
+    }
+
+    .campaigns .content .box .desc{
+        width: 100%;
+        margin: 20px;
+        height: auto;
+    }
+
+    .campaigns .content .box .desc p{
+        font-size: 0.9em;
+    }
+
+    .campaigns .content .box:nth-of-type(even) .desc{
+        order: 1;
+    }
+
+    .campaigns .content .box:nth-of-type(even) .tumbnail{
+        order: 0;
+    }
+}
