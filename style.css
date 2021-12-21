@@ -305,11 +305,24 @@ header .navigation li a:hover{
     justify-content: center;
 }
 
+.campaigns .content .box .tumbnail::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #001219,#00000000,#00000000, #00000000);
+}
+
 .campaigns .content .box .tumbnail{
     position: relative;
     width: 45%;
     height: 60vh;
     overflow: hidden;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #cac2c2,#ffffff20, #ffffff00 100%) 1;
+    border-right-color: none;
 }
 
 .campaigns .content .box .desc{
@@ -317,7 +330,7 @@ header .navigation li a:hover{
     width: 45%;
     height: 60vh;
     margin: 2%;
-    color: rgb(202, 194, 194);
+    color: #cac2c2;
     font-family: maiola;
     display: flex;
     justify-content: center;
@@ -325,12 +338,18 @@ header .navigation li a:hover{
     flex-direction: column;
 }
 
-.campaigns .content .box:nth-of-type(even) .desc{
+.campaigns .content .box:nth-child(even) .desc{
     order: 0;
 }
 
-.campaigns .content .box:nth-of-type(even) .tumbnail{
+.campaigns .content .box:nth-child(even) .tumbnail{
     order: 1;
+    border-image: linear-gradient(270deg, #cac2c2,#ffffff20, #ffffff00 100%) 1;
+    border-left-color: none;
+}
+
+.campaigns .content .box:nth-child(odd) .tumbnail::after{
+    background-image: linear-gradient(-90deg, #001219,#00000000,#00000000, #00000000);
 }
 
 .campaigns .content .box .desc h3{
@@ -360,6 +379,15 @@ header .navigation li a:hover{
         width: 100%;
         margin: 0%;
         height: 40vh;
+        border: none;
+    }
+
+    .campaigns .content .box .tumbnail::after{
+        background-image: linear-gradient(0deg, #001219,#00000000,#00000000, #00000000);
+    }
+
+    .campaigns .content .box:nth-child(odd) .tumbnail::after{
+        background-image: linear-gradient(0deg, #001219,#00000000,#00000000, #00000000);
     }
 
     .campaigns .content .box .desc{
@@ -372,11 +400,12 @@ header .navigation li a:hover{
         font-size: 0.9em;
     }
 
-    .campaigns .content .box:nth-of-type(even) .desc{
+    .campaigns .content .box:nth-child(even) .desc{
         order: 1;
     }
 
-    .campaigns .content .box:nth-of-type(even) .tumbnail{
+    .campaigns .content .box:nth-child(even) .tumbnail{
         order: 0;
+        border: none;
     }
 }
