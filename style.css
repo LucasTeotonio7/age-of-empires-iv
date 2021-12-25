@@ -14,6 +14,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background: #001219;
+}
+
 section, footer{
     display: flex;
     justify-content: center;
@@ -21,6 +25,7 @@ section, footer{
     width: 100%;
     min-height: 100vh;
     transition: 0.5s;
+    color: #cac2c2;
 }
 
 
@@ -178,7 +183,6 @@ header .navigation li a:hover{
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: #001219;
 }
 
 .civilizations .content{
@@ -284,7 +288,6 @@ header .navigation li a:hover{
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: #001219;
     /* background-image: url('assets/images/backgrounds/swoosh.png'); */
     background-repeat: no-repeat;
 }
@@ -420,10 +423,10 @@ header .navigation li a:hover{
     width: 100%;
     min-height: 100vh;
     height: auto;
-    background-color: #001219;
     background-image: url('assets/images/backgrounds/background3.png');
     background-size: 100%;
     background-repeat: no-repeat;
+    margin-top: 100px;
 }
 
 .gameplayer .content{
