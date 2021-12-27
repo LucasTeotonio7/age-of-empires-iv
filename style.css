@@ -467,3 +467,86 @@ header .navigation li a:hover{
     }
 
 }
+
+.requirements{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-image: url('assets/images/backgrounds/background4.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+}
+
+.requirements .title h2{
+    width: calc(100%-20px);
+    text-align: left;
+    margin-left: 20px;
+}
+
+.requirements .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.requirements .content .card{
+    width: 360px;
+    min-height: 80vh;
+    margin: 0 0 20px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    background-color: #0f1119;
+    background-image: url('assets/images/textures/black-scales.png');
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #fff,#ffffff20, #ffffff00 100%) 1;
+    border-bottom-color: none;
+}
+
+.requirements .content .card h4{
+    font-family: maiola;
+    color: #cda351;
+    font-size: 1.4em;
+}
+
+.requirements .content .card p{
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 991px){
+    .requirements{
+        background-position: top right;
+        background-size: 150%;
+    }
+
+    .gameplayer .content{
+        width: 100%;
+        background-image: linear-gradient(0deg,#001219, #001219,#001219,#001219,#00000000);
+    }
+
+    .requirements .content .card {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .requirements .title{
+        width: 100%;
+        margin-top: 65%;
+    }
+
+    .requirements .title h2{
+        text-align: center;
+        margin-left: 0px;
+        padding: 20px;
+    }
+}
