@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: maiola;
-    src: url('assets/fonts/maiola.ttf')format('opentype');
+    src: url('assets/fonts/maiola.ttf') format('opentype');
 }
 
 *{
@@ -549,4 +549,53 @@ header .navigation li a:hover{
         margin-left: 0px;
         padding: 20px;
     }
+}
+
+.age-insider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-image: url('assets/images/backgrounds/background5.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+.age-insider .content{
+    display: flex;
+    justify-content:right;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.age-insider .content .card{
+    width: 450px;
+    min-height: 80vh;
+    margin: 0 8% 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    background-color: #0f1119;
+    background-image: url('assets/images/textures/black-scales.png');
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #fff,#ffffff20, #ffffff00 100%) 1;
+    border-bottom-color: none;
+}
+
+.age-insider .title h2{
+    text-align: right;
+    margin-left: 20px;
+}
+
+.age-insider .content .card li{
+    margin-top: 20px;
+    font-size: 0.9em;
 }
