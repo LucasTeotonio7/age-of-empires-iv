@@ -582,7 +582,7 @@ header .navigation li a:hover{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     background-color: #0f1119;
     background-image: url('assets/images/textures/black-scales.png');
     border: 1px solid;
@@ -598,4 +598,25 @@ header .navigation li a:hover{
 .age-insider .content .card li{
     margin-top: 20px;
     font-size: 0.9em;
+}
+
+.age-insider .content .card button{
+    background-color: #fcbf49;
+    padding: 10px;
+    border: none;
+    margin: 30px 0 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.age-insider .content .card button:hover{
+    letter-spacing: 0.5px;
+    background-color: #fbb62d;
+
+}
+
+.age-insider .content .card a{
+    font-size: 0.8rem;
+    color: #2ac1e0;
 }
