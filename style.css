@@ -18,7 +18,7 @@ body{
     background: #001219;
 }
 
-section, footer{
+section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -619,4 +619,15 @@ header .navigation li a:hover{
 .age-insider .content .card a{
     font-size: 0.8rem;
     color: #2ac1e0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+footer p{
+    color: #999;
 }
