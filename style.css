@@ -22,6 +22,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
     transition: 0.5s;
@@ -50,10 +51,6 @@ section{
 .title p{
     font-family: maiola, sans-serif;
     font-size: 1.6em;
-}
-
-footer{
-    height: auto;
 }
 
 header{
@@ -117,11 +114,7 @@ header .navigation li a:hover{
 .menuToggle.active{
     background: url(assets/images/icons/warrior-icon.jpg);
     filter: drop-shadow(0 0 10px #fff);
-    position: relative;
-    width: 70px;
-    height: 70px;
     background-size: 70px;
-    margin-left: 30px;
 }
 
  header.sticky{
@@ -174,15 +167,6 @@ header .navigation li a:hover{
     .main .logo{
         width: 60vw;
     }
-}
-
-.civilizations{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
 }
 
 .civilizations .content{
@@ -280,17 +264,6 @@ header .navigation li a:hover{
 }
 
 /* campaigns style */
-
-.campaigns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    /* background-image: url('assets/images/backgrounds/swoosh.png'); */
-    background-repeat: no-repeat;
-}
 
 .campaigns .content{
     display: flex;
@@ -416,13 +389,8 @@ header .navigation li a:hover{
 }
 
 .gameplayer{
-    display: flex;
     justify-content:left;
     align-items:flex-start;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
     background-image: url('assets/images/backgrounds/background3.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -436,7 +404,6 @@ header .navigation li a:hover{
     flex-direction: column;
     height: 100vh;
 }
-
 
 .gameplayer .content p{
     margin: 40px;
@@ -469,12 +436,8 @@ header .navigation li a:hover{
 }
 
 .requirements{
-    display: flex;
     justify-content: start;
     align-items: start;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
     background-image: url('assets/images/backgrounds/background4.png');
     background-repeat: no-repeat;
     background-position: top right;
@@ -552,12 +515,6 @@ header .navigation li a:hover{
 }
 
 .age-insider{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
     background-image: url('assets/images/backgrounds/background5.png');
     background-repeat: no-repeat;
     background-position: top left;
